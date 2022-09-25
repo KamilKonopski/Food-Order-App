@@ -44,6 +44,7 @@ const Cart = (props) => {
 		);
 		setIsSubmitting(false);
 		setDidSubmit(true);
+		context.clearCart();
 	};
 
 	const cartItems = (
