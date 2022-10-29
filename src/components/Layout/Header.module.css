@@ -1,29 +1,29 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5rem;
+    align-items: center;
     background-color: #8a2b06;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     color: white;
     display: flex;
+    height: 5rem;
     justify-content: space-between;
-    align-items: center;
+    left: 0;
     padding: 0 10%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 10;
 }
 
 .main-image {
-    width: 100%;
     height: 25rem;
-    z-index: 0;
     overflow: hidden;
+    width: 100%;
+    z-index: 0;
 }
 
 .main-image img {
-    width: 110%;
     height: 100%;
     object-fit: cover;
     transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+    width: 110%;
 }
