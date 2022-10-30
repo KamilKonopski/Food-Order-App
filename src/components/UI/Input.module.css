@@ -1,6 +1,6 @@
 .input {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-bottom: 0.5rem;
 }
 
@@ -10,9 +10,9 @@
 }
 
 .input input {
-    width: 3rem;
-    border-radius: 5px;
     border: 1px solid #ccc;
+    border-radius: 5px;
     font: inherit;
     padding-left: 0.5rem;
+    width: 3rem;
 }
