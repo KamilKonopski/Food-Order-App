@@ -5,7 +5,7 @@ import classes from "./Checkout.module.css";
 const isEmpty = (value) => value.trim() === "";
 const isFiveChars = (value) => value.trim().length === 5;
 
-const Checkout = (props) => {
+function Checkout(props) {
 	const [formInputsValidity, setFormInputsValidity] = useState({
 		name: true,
 		street: true,
@@ -18,7 +18,7 @@ const Checkout = (props) => {
 	const postalCodeInputRef = useRef();
 	const cityInputRef = useRef();
 
-	const confirmHandler = (event) => {
+	function confirmHandler(event) {
 		event.preventDefault();
 
 		const enteredName = nameInputRef.current.value;
