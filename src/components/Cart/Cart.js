@@ -7,7 +7,7 @@ import Modal from "../UI/Modal";
 
 import classes from "./Cart.module.css";
 
-const Cart = (props) => {
+function Cart(props) {
 	const [isCheckout, setIsCheckout] = useState(false);
 	const [isSubmitting, setIsSubmitting] = useState(false);
 	const [didSubmit, setDidSubmit] = useState(false);
@@ -17,20 +17,20 @@ const Cart = (props) => {
 	const totalAmount = `$${context.totalAmount.toFixed(2)}`;
 	const hasItems = context.items.length > 0;
 
-	const cartItemRemoveHandler = (id) => {
+	function cartItemRemoveHandler(id) {
 		context.removeItem(id);
 	};
 
-	const cartItemAddHandler = (item) => {
+	function cartItemAddHandler(item) {
 		const cartItem = { ...item, amount: 1 };
 		context.addItem(cartItem);
 	};
 
-	const orderHandler = () => {
+	function orderHandler() {
 		setIsCheckout(true);
 	};
 
-	const submitOrderHandler = async (userData) => {
+	async function submitOrderHandler(userData) {
 		setIsSubmitting(true);
 		await fetch(
 			"https://food-order-8b7a9-default-rtdb.europe-west1.firebasedatabase.app/orders.json",
