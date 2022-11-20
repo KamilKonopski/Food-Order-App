@@ -8,11 +8,11 @@ import Meals from "./components/Meals/Meals";
 function App() {
 	const [cartIsShown, setCartIsShown] = useState(false);
 
-	const showCartHandler = () => {
+	function showCartHandler() {
 		setCartIsShown(true);
 	};
 
-	const hideCartHandler = () => {
+	function hideCartHandler() {
 		setCartIsShown(false);
 	};
 
