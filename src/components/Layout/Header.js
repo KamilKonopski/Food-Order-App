@@ -6,7 +6,7 @@ import mealsIMG from "../../assets/meals.jpg";
 
 import classes from "./Header.module.css";
 
-const Header = (props) => {
+function Header(props) {
 	return (
 		<Fragment>
 			<header className={classes.header}>
