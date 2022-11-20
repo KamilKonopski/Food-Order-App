@@ -5,7 +5,7 @@ import CartIcon from "../Cart/CartIcon";
 
 import classes from "./HeaderCartButton.module.css";
 
-const HeaderCartButton = (props) => {
+function HeaderCartButton(props) {
 	const [btnIsHighlighted, setBtnIsHighlighted] = useState(false);
 
 	const context = useContext(CartContext);
